@@ -25,6 +25,13 @@ body {
     background-color: #fff;
     font-family: Roboto, sans-serif;
     }
+.container {
+    width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+    }
 .logo {
     color: var(--header-color);
     
@@ -62,10 +69,12 @@ body {
 .mail,
 .phone {
     color: var(--text-color);
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
 }
 .mail:hover,
 .mail:focus {
@@ -73,8 +82,12 @@ body {
 }
 .hero {
     background-color: var(--background-secondary);
+    text-align: center;
 }
 .hero-header {
+    margin-top: 0;
+    margin-bottom: 46px;
+
     color: var(--white);
     font-weight: 900;
     font-size: 44px;
@@ -83,12 +96,20 @@ body {
     letter-spacing: 0.06em;
 }
 .hero-button {
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 200px;
+    height: 50px;
+
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
 }
 .button {
     background-color: var(--accent-color);
@@ -199,6 +220,12 @@ body {
     background-color: var(--accent-color);
 } 
 .footer-button {
+    display: inline-block;
+    padding: 10px 45px 10px 46px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+
     font-weight: 900;
     font-size: 16px;
     line-height: 1.9;
