@@ -30,8 +30,10 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
     }
+
+/* Шапка */
+
 .logo {
     color: var(--header-color);
     
@@ -42,6 +44,13 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
+.nav-list {
+    display: flex;
+    margin-left: 86px;
+}
+.nav-list .item + .item {
+    margin-left: 50px;
+  }
 .accent {
     color: var(--accent-color);
 }
@@ -52,6 +61,10 @@ body {
     text-decoration: none;
 }
 .header-list {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--header-color);
     
     font-weight: 500;
@@ -80,6 +93,19 @@ body {
 .mail:focus {
     color: var(--accent-color);
 }
+.mail {
+    margin-right: 30px;
+}
+.adress-header {
+    margin-left: auto;
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Герой */
+
 .hero {
     background-color: var(--background-secondary);
     text-align: center;
@@ -117,6 +143,7 @@ body {
 }
 .header {
     color: var(--header-color);
+    margin-top: 0;
 }
 .header-primary {
     font-weight: 700;
@@ -142,7 +169,26 @@ body {
 .picture:focus {
     background-color: var(--accent-color);
 }
+
+/* Гарантии */
+
+.guarantee {
+    display: flex;
+    align-items: center;
+}
+.guarantee .item .picture {
+    width: 278px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.guarantee .item .assurance {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
 .underline {
+    margin-top: 0;
+    margin-bottom: 0;
+
     background-color: var(--background-secondary);
     color: var(--white);
     text-align: center;
@@ -152,7 +198,40 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
+.activity {
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+.list-activity {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.list-activity .item:not(:last-child){
+    margin-right: 30px;
+}
+
+/* Наша команда */
+
 .team {
+    margin-top: 188px;
+    margin-bottom: 50px;
+}
+.team-list {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+}
+.team-list .item + .item {
+    margin-left: 30px;
+}
+.team-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
@@ -160,15 +239,42 @@ body {
     letter-spacing: 0.03em;
 }
 .team-job {
+    margin-top: 0;
+    margin-bottom: 16px;
+
     font-weight: 400;
+    text-align: center;
+}
+.link-list {
+    display: flex;
+    justify-content: center;
+}
+.link-list .item + .item {
+    margin-left: 11px;
 }
 .team-link {
+    text-align: center;
     color: var(--links);
 }
 .team-link:hover,
 .team-link:focus {
     background-color: var(--accent-color);
     color: var(--white);
+}
+
+/* Клиенты */
+
+.clients {
+    margin-top: 188px;
+    margin-bottom: 50px;
+}
+.company-clients {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+}
+.company-clients .item + .item {
+    margin-left: 30px;
 }
 .link-company {
     color: var(--links);
@@ -188,6 +294,9 @@ body {
     color: var(--white);
 }
 .logo-secondary {
+    display: block;
+    padding-top: 48px;
+
     color: var(--white);
     font-family: Raleway, sans-serif;
 
@@ -202,7 +311,13 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
+
+/* Футер */
+
 .footer-header {
+    /* margin-top: 0;
+    margin-bottom: 21px; */
+
     color: var(--white);
     font-weight: 700;
     font-size: 14px;
@@ -210,6 +325,37 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
    
+}
+.footer-content {
+    display: flex;
+    align-items: baseline;
+}
+
+.net,
+.sub {
+    padding-top: 56px;
+    
+}
+.net {
+    margin-left: 179px;
+}
+.footer-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.footer-list .item + .item {
+    margin-left: 11px;
+}
+/* У меня пока нет формы, поэтому марджин от кнопки "Подписаться", а не от формы */
+.sub {
+    margin-left: 384px;
+}
+.sub .footer-header {
+    min-width: 214px;
+    height: 16px;
+}
 }
 .footer-link {
     background-color: var(--footer-links);
