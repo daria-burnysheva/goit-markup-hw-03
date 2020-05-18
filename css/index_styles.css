@@ -32,7 +32,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
     }
 
 /* Шапка */
@@ -182,6 +182,9 @@ body {
     align-items: center;
     padding-left: 0;
 }
+.guarantee .item .header-secondary {
+    margin-bottom: 0;
+}
 .guarantee .item .picture {
     width: 278px;
     height: 120px;
@@ -278,6 +281,8 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 94px;
+    padding-left: 0;
+    margin-top: 0;
 }
 .company-clients .item + .item {
     margin-left: 30px;
