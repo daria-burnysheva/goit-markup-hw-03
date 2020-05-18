@@ -176,6 +176,7 @@ body {
 .guarantee {
     display: flex;
     align-items: center;
+    padding-left: 0;
 }
 .guarantee .item .picture {
     width: 278px;
