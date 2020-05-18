@@ -30,6 +30,7 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 2px solid tomato;
     }
 
 /* Шапка */
@@ -315,8 +316,8 @@ body {
 /* Футер */
 
 .footer-header {
-    /* margin-top: 0;
-    margin-bottom: 21px; */
+    margin-top: 0;
+    margin-bottom: 21px;
 
     color: var(--white);
     font-weight: 700;
@@ -355,7 +356,6 @@ body {
 .sub .footer-header {
     min-width: 214px;
     height: 16px;
-}
 }
 .footer-link {
     background-color: var(--footer-links);
