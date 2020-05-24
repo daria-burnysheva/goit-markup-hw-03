@@ -32,7 +32,6 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
     }
 
 /* Шапка */
@@ -303,10 +302,14 @@ body {
 }
 .city-adress {
     color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+.one:not(:last-child) {
+    margin-bottom: 9px;
 }
 .logo-secondary {
     display: block;
-    padding-top: 48px;
 
     color: var(--white);
     font-family: Raleway, sans-serif;
@@ -340,15 +343,9 @@ body {
 .footer-content {
     display: flex;
     align-items: baseline;
-}
+    padding-top: 48px;
+    padding-bottom: 28px;
 
-.net,
-.sub {
-    padding-top: 56px;
-    
-}
-.net {
-    margin-left: 179px;
 }
 .footer-list {
     display: flex;
@@ -360,12 +357,17 @@ body {
     margin-left: 11px;
 }
 /* У меня пока нет формы, поэтому марджин от кнопки "Подписаться", а не от формы */
-.sub {
-    margin-left: 384px;
+.net {
+    margin-left: 69px;
+    margin-right: 93px;
 }
 .sub .footer-header {
     min-width: 214px;
     height: 16px;
+}
+.footer-adress {
+    display: flex;
+    flex-direction: column;
 }
 .footer-link {
     background-color: var(--footer-links);
@@ -425,11 +427,14 @@ body {
     margin-top: 0;
     padding-left: 0;
 }
-.page-type:not(:nth-last-child(-n + 3)) {
+.cards-cont:not(:nth-last-child(-n + 3)) {
 margin-bottom: 50px;
 }
-.page-type::nth-last-child(-n + 3) {
+.cards-cont:nth-last-child(-n + 3) {
     margin-bottom: 114px;
+}
+.cards-cont .link {
+    display: block;
 }
 .description {
     background-color: var(--background-cards);
