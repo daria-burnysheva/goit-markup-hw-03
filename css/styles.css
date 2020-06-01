@@ -25,8 +25,12 @@ body {
     background-color: #fff;
     font-family: Roboto, sans-serif;
     }
+.list {
+    margin: 0;
+    padding: 0;
+}
 .container {
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -48,9 +52,10 @@ body {
 }
 .nav-list {
     display: flex;
-    margin-left: 86px;
+    margin-left: 85px;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
 }
 .nav-list .item + .item {
     margin-left: 50px;
@@ -169,11 +174,6 @@ body {
 .picture {
     background-color: var(--background-picture-color);
 }
-.picture:hover,
-.picture:focus {
-    background-color: var(--accent-color);
-}
-
 /* Гарантии */
 
 .guarantee {
@@ -181,11 +181,19 @@ body {
     align-items: center;
     padding-left: 0;
 }
+.guarantee .item {
+    width: 270px;
+    height: 250px;
+}
+.guarantee .item + .item {
+    margin-left: 30px;
+}
+
 .guarantee .item .header-secondary {
     margin-bottom: 0;
 }
 .guarantee .item .picture {
-    width: 278px;
+    width: 270px;
     height: 120px;
     margin-bottom: 30px;
 }
@@ -279,7 +287,6 @@ body {
 .company-clients {
     display: flex;
     justify-content: center;
-    margin-bottom: 94px;
     padding-left: 0;
     margin-top: 0;
 }
@@ -365,10 +372,6 @@ body {
     min-width: 214px;
     height: 16px;
 }
-.footer-adress {
-    display: flex;
-    flex-direction: column;
-}
 .footer-link {
     background-color: var(--footer-links);
     color: var(--white);
@@ -426,6 +429,9 @@ body {
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
+}
+.cards-cont {
+    width: 370px;
 }
 .cards-cont:not(:nth-last-child(-n + 3)) {
 margin-bottom: 50px;
